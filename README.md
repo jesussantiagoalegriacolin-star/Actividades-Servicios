@@ -1,4 +1,4 @@
-# Regsitro e actividades club de tareas
+# Registro de actividades club de tareas
  <html lang="es">
 <head>
   <meta charset="utf-8">
