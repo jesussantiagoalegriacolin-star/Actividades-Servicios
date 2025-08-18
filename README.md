@@ -53,7 +53,7 @@
   </div>
 
   <div class="mb-3">
-    <label for="info" class="form-label">Nombre completo y lugar de servicio donde entregas tus actividades</label>
+    <label for="info" class="form-label">Nombre completo y nombre de la biblioteca</label>
     <textarea class="form-control" id="info" rows="3"></textarea>
 <!DOCTYPE html>
 <html lang="es">
