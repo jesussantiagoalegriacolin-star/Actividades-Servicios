@@ -45,7 +45,7 @@
 </head>
 <body>
 
-  <h1>¡Bienvenidos al registro de actividades de servicios sociales!</h1>
+  <h1>¡Bienvenidos al registro de actividades de club de tareas!</h1>
 
   <div class="mb-3">
     <label for="email" class="form-label">Añade una cuenta</label>
