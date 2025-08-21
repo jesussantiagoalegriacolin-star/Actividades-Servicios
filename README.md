@@ -1,47 +1,69 @@
 # Registro de actividades club de tareas
- <html lang="es">    
-<head>    
-  <meta charset="utf-8">    
-  <meta name="viewport" content="width=device-width, initial-scale=1">    
-  <title>Servicios Sociales Registro</title>    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>    
-  <style>    
-    body {    
-      padding: 20px;    
-    }    
-    h1 {    
-      color: #0d6efd; /* Azul Bootstrap */    
-    }    
-    .blue-row { background-color: #cce5ff; }    
-    .pink-row { background-color: #f8d7da; }    
-    .red-row { background-color: #f5c6cb; }    
-    .imagen {    
-      max-width: 100%;    
-      height: auto;    
-      border: 2px solid #333;    
-      border-radius: 10px;    
-      margin-top: 20px;    
-    }    
-    input[type="file"] {    
-      margin-top: 20px;    
-      padding: 10px;    
-      background-color: #4CAF50;    
-      color: white;    
-      border: none;    
-      border-radius: 5px;    
-      cursor: pointer;    
-    }    
-    input[type="file"]:hover {    
-      background-color: #45a049;    
-    }    
-    textarea {    
-      width: 95%;    
-      height: 120px;    
-      resize: vertical;    
-    }    
-  </style>    
-</head>    
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios Sociales Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0d6efd;
+      /* Azul Bootstrap */
+    }
+
+    .blue-row {
+      background-color: #cce5ff;
+    }
+
+    .pink-row {
+      background-color: #f8d7da;
+    }
+
+    .red-row {
+      background-color: #f5c6cb;
+    }
+
+    .imagen {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #333;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    input[type="file"] {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="file"]:hover {
+      background-color: #45a049;
+    }
+
+    textarea {
+      width: 95%;
+      height: 120px;
+      resize: vertical;
+    }
+
+    .timer {
+      font-size: 14px;
+      font-weight: bold;
+      color: #d63384;
+    }
+  </style>
+</head>
+
 <body>
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
@@ -55,137 +77,156 @@
     <input type="text" class="form-control" id="nombreCompleto" placeholder="Escribe tu nombre completo">
   </div>
 
-  <!-- Campo de selección de biblioteca -->
-  <div class="mb-3">  
-    <label for="nombreBiblioteca" class="form-label">Nombre de la biblioteca</label>  
-    <select class="form-select" id="nombreBiblioteca">  
-      <option value="" selected>Selecciona una biblioteca</option>  
-      <option value="José Luis Álamo Jardón">José Luis Álamo Jardón</option>  
-      <option value="Rafael Moreno Montes de Oca">Rafael Moreno Montes de Oca</option>  
-      <option value="Guillermina Nateras López">Guillermina Nateras López</option>  
-      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>  
-      <option value="Dr. Urban Boutelegier">Dr. Urban Boutelegier</option>  
-      <option value="Michel D’Hooghe">Michel D’Hooghe</option>  
-      <option value="Santa Teresita del Niño Jesús">Santa Teresita del Niño Jesús</option>  
-      <option value="Biblioteca Santiago Tlacotepec">Biblioteca Santiago Tlacotepec</option>  
-      <option value="Biblioteca Santiago Tlaxomulco">Biblioteca Santiago Tlaxomulco</option>  
-      <option value="Biblioteca Tecaxic">Biblioteca Tecaxic</option>  
-      <option value="Ludoteca San Cristóbal Huichochitlán">Ludoteca San Cristóbal Huichochitlán</option>  
-      <option value="Museo Municipal de Calixtlahuaca">Museo Municipal de Calixtlahuaca</option>  
-      <option value="Museo del Alfeñique">Museo del Alfeñique</option>  
-      <option value="Lic. Jaime Almazán Delgado">Lic. Jaime Almazán Delgado</option>  
-      <option value="José María Heredia y Heredia">José María Heredia y Heredia</option>  
-      <option value="Leonardo Sánchez Montaño">Leonardo Sánchez Montaño</option>  
-      <option value="Otomitl">Otomitl</option>  
-      <option value="Concepción García Valdez">Concepción García Valdez</option>  
-      <option value="Sor Juana Inés de la Cruz">Sor Juana Inés de la Cruz</option>  
-      <option value="Mercedes López Gómeztagle">Mercedes López Gómeztagle</option>  
-      <option value="Edelmira Nava Arellano">Edelmira Nava Arellano</option>  
-      <option value="Profa. Laura Beatriz Benavides">Profa. Laura Beatriz Benavides</option>  
-      <option value="Agustín María Lebrija">Agustín María Lebrija</option>  
-      <option value="Rodolfo García Gutiérrez">Rodolfo García Gutiérrez</option>  
-      <option value="Laura Méndez de Cuenca">Laura Méndez de Cuenca</option>  
-      <option value="Mercedes Carrasco">Mercedes Carrasco</option>  
-      <option value="Fray Andrés de Castro">Fray Andrés de Castro</option>  
-    </select>  
+  <div class="mb-3">
+    <label for="nombreBiblioteca" class="form-label">Nombre de la biblioteca</label>
+    <select class="form-select" id="nombreBiblioteca">
+      <option value="" selected>Selecciona una biblioteca</option>
+      <option value="José Luis Álamo Jardón">José Luis Álamo Jardón</option>
+      <option value="Rafael Moreno Montes de Oca">Rafael Moreno Montes de Oca</option>
+      <option value="Guillermina Nateras López">Guillermina Nateras López</option>
+      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
+      <option value="Dr. Urban Boutelegier">Dr. Urban Boutelegier</option>
+      <option value="Michel D’Hooghe">Michel D’Hooghe</option>
+      <option value="Santa Teresita del Niño Jesús">Santa Teresita del Niño Jesús</option>
+      <option value="Biblioteca Santiago Tlacotepec">Biblioteca Santiago Tlacotepec</option>
+      <option value="Biblioteca Santiago Tlaxomulco">Biblioteca Santiago Tlaxomulco</option>
+      <option value="Biblioteca Tecaxic">Biblioteca Tecaxic</option>
+      <option value="Ludoteca San Cristóbal Huichochitlán">Ludoteca San Cristóbal Huichochitlán</option>
+      <option value="Museo Municipal de Calixtlahuaca">Museo Municipal de Calixtlahuaca</option>
+      <option value="Museo del Alfeñique">Museo del Alfeñique</option>
+      <option value="Lic. Jaime Almazán Delgado">Lic. Jaime Almazán Delgado</option>
+      <option value="José María Heredia y Heredia">José María Heredia y Heredia</option>
+      <option value="Leonardo Sánchez Montaño">Leonardo Sánchez Montaño</option>
+      <option value="Otomitl">Otomitl</option>
+      <option value="Concepción García Valdez">Concepción García Valdez</option>
+      <option value="Sor Juana Inés de la Cruz">Sor Juana Inés de la Cruz</option>
+      <option value="Mercedes López Gómeztagle">Mercedes López Gómeztagle</option>
+      <option value="Edelmira Nava Arellano">Edelmira Nava Arellano</option>
+      <option value="Profa. Laura Beatriz Benavides">Profa. Laura Beatriz Benavides</option>
+      <option value="Agustín María Lebrija">Agustín María Lebrija</option>
+      <option value="Rodolfo García Gutiérrez">Rodolfo García Gutiérrez</option>
+      <option value="Laura Méndez de Cuenca">Laura Méndez de Cuenca</option>
+      <option value="Mercedes Carrasco">Mercedes Carrasco</option>
+      <option value="Fray Andrés de Castro">Fray Andrés de Castro</option>
+    </select>
   </div>
 
-  <!-- Campo de selección de delegación / cobertura -->
-  <div class="mb-3">  
-    <label for="coberturaAtencion" class="form-label">Cobertura de atención / Delegación</label>  
-    <select class="form-select" id="coberturaAtencion">  
-      <option value="" selected>Selecciona la delegación o cobertura</option>  
-      <option value="San Lorenzo Tepaltitlán">San Lorenzo Tepaltitlán</option>  
-      <option value="Santa Cruz Atzcapotzaltongo">Santa Cruz Atzcapotzaltongo</option>  
-      <option value="San Mateo Oxtotitlán, Nueva Oxtotitlán">San Mateo Oxtotitlán, Nueva Oxtotitlán</option>  
-      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>  
-      <option value="San Diego de los Padres Cuexcontitlán">San Diego de los Padres Cuexcontitlán</option>  
-      <option value="San Cayetano Morelos">San Cayetano Morelos</option>  
-      <option value="Morelos, Sánchez">Morelos, Sánchez</option>  
-      <option value="Santiago Tlacotepec, San Juan Tilapa">Santiago Tlacotepec, San Juan Tilapa</option>  
-      <option value="Santiago Tlaxomulco">Santiago Tlaxomulco</option>  
-      <option value="Tecaxic">Tecaxic</option>  
-      <option value="San Cristóbal Huichochitlán">San Cristóbal Huichochitlán</option>  
-      <option value="Toluca, Estado de México, México y extranjero">Toluca, Estado de México, México y extranjero</option>  
-      <option value="La Maquinita, Santiago Miltepec">La Maquinita, Santiago Miltepec</option>  
-      <option value="Cacalomacán">Cacalomacán</option>  
-      <option value="San Mateo Otzacatipan">San Mateo Otzacatipan</option>  
-      <option value="Tlachaloya">Tlachaloya</option>  
-      <option value="San Martín Toltepec">San Martín Toltepec</option>  
-      <option value="Independencia">Independencia</option>  
-      <option value="Capultitlán, Moderna de la Cruz">Capultitlán, Moderna de la Cruz</option>  
-      <option value="San Andrés Cuexcontitlán">San Andrés Cuexcontitlán</option>  
-      <option value="San Antonio Buenavista, San Buenaventura">San Antonio Buenavista, San Buenaventura</option>  
-      <option value="San Pablo Autopan">San Pablo Autopan</option>  
-      <option value="Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril">Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril</option>  
-      <option value="Calixtlahuaca, San Marcos Yachihuacaltepec">Calixtlahuaca, San Marcos Yachihuacaltepec</option>  
-    </select>  
+  <div class="mb-3">
+    <label for="coberturaAtencion" class="form-label">Cobertura de atención / Delegación</label>
+    <select class="form-select" id="coberturaAtencion">
+      <option value="" selected>Selecciona la delegación o cobertura</option>
+      <option value="San Lorenzo Tepaltitlán">San Lorenzo Tepaltitlán</option>
+      <option value="Santa Cruz Atzcapotzaltongo">Santa Cruz Atzcapotzaltongo</option>
+      <option value="San Mateo Oxtotitlán, Nueva Oxtotitlán">San Mateo Oxtotitlán, Nueva Oxtotitlán</option>
+      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
+      <option value="San Diego de los Padres Cuexcontitlán">San Diego de los Padres Cuexcontitlán</option>
+      <option value="San Cayetano Morelos">San Cayetano Morelos</option>
+      <option value="Morelos, Sánchez">Morelos, Sánchez</option>
+      <option value="Santiago Tlacotepec, San Juan Tilapa">Santiago Tlacotepec, San Juan Tilapa</option>
+      <option value="Santiago Tlaxomulco">Santiago Tlaxomulco</option>
+      <option value="Tecaxic">Tecaxic</option>
+      <option value="San Cristóbal Huichochitlán">San Cristóbal Huichochitlán</option>
+      <option value="Toluca, Estado de México, México y extranjero">Toluca, Estado de México, México y extranjero</option>
+      <option value="La Maquinita, Santiago Miltepec">La Maquinita, Santiago Miltepec</option>
+      <option value="Cacalomacán">Cacalomacán</option>
+      <option value="San Mateo Otzacatipan">San Mateo Otzacatipan</option>
+      <option value="Tlachaloya">Tlachaloya</option>
+      <option value="San Martín Toltepec">San Martín Toltepec</option>
+      <option value="Independencia">Independencia</option>
+      <option value="Capultitlán, Moderna de la Cruz">Capultitlán, Moderna de la Cruz</option>
+      <option value="San Andrés Cuexcontitlán">San Andrés Cuexcontitlán</option>
+      <option value="San Antonio Buenavista, San Buenaventura">San Antonio Buenavista, San Buenaventura</option>
+      <option value="San Pablo Autopan">San Pablo Autopan</option>
+      <option value="Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril">Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril</option>
+      <option value="Calixtlahuaca, San Marcos Yachihuacaltepec">Calixtlahuaca, San Marcos Yachihuacaltepec</option>
+    </select>
   </div>
-     <h2 style="text-align:center;">Plan de Septiembre - Octubre 2025</h2>    
-<table class="table table-bordered">    
+
+  <h2 style="text-align:center;">Plan de Septiembre - Octubre 2025</h2>
+  <table class="table table-bordered">
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Tiempo</title>
+</head>
+<body>
+
+<table border="1">
   <thead>
-    <tr>    
-      <th>Semana</th>    
-      <th>Actividad</th>    
-      <th>Fecha</th>    
-      <th>Numero de asistentes</th>    
-      <th>Nota informativa</th>    
-      <th>Evidencia fotográfica</th>    
+    <tr>
+      <th>Semana</th>
+      <th>Tarea</th>
+      <th>Fecha de Entrega</th>
+      <th>Completado</th>
+      <th>Notas</th>
+      <th>Archivos</th>
+      <th>Tiempo Restante</th>
     </tr>
   </thead>
   <tbody>
     <!-- Semana 1 -->
     <tr>
       <td>Semana 1</td>
-      <td>Domina tu tema</td>
-      <td>Miércoles 3 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Realiza la primera tarea</td>
+      <td>Lunes 1 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="1"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer1" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 1</td>
-      <td>Practica en voz alta</td>
-      <td>Jueves 4 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Haz el análisis inicial</td>
+      <td>Martes 2 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="2"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer2" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 2 -->
     <tr>
       <td>Semana 2</td>
-      <td>Visualiza el éxito</td>
-      <td>Miércoles 10 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Define los objetivos</td>
+      <td>Lunes 8 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="3"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer3" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 2</td>
-      <td>Respiración profunda</td>
-      <td>Jueves 11 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Revisa los resultados</td>
+      <td>Martes 9 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="4"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer4" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 3 -->
     <tr>
       <td>Semana 3</td>
-      <td>Adopta una postura de poder</td>
-      <td>Miércoles 17 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Haz una revisión crítica</td>
+      <td>Lunes 15 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="5"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer5" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 3</td>
-      <td>Canaliza tu energía</td>
-      <td>Jueves 18 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td>Mejora el plan inicial</td>
+      <td>Martes 16 Septiembre 2025</td>
+      <td><input type="checkbox" class="check-input" data-id="6"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer6" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 4 -->
@@ -193,17 +234,20 @@
       <td>Semana 4</td>
       <td>Haz pausas intencionadas</td>
       <td>Miércoles 24 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="7"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer7" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 4</td>
       <td>Varía el tono y el ritmo</td>
       <td>Jueves 25 Septiembre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="8"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer8" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 5 -->
@@ -211,17 +255,20 @@
       <td>Semana 5</td>
       <td>Utiliza notas clave</td>
       <td>Miércoles 1 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="9"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer9" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 5</td>
       <td>Establece contacto visual</td>
       <td>Jueves 2 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="10"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer10" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 6 -->
@@ -229,17 +276,20 @@
       <td>Semana 6</td>
       <td>Sonríe</td>
       <td>Miércoles 8 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="11"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer11" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 6</td>
       <td>Sé honesto contigo mismo</td>
       <td>Jueves 9 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="12"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer12" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
 
     <!-- Semana 7 -->
@@ -247,24 +297,76 @@
       <td>Semana 7</td>
       <td>Capacitación</td>
       <td>Miércoles 15 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="13"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer13" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
+
     <tr>
       <td>Semana 7</td>
       <td>Inicio de la siguiente etapa</td>
       <td>Jueves 16 Octubre 2025</td>
-      <td><input type="checkbox"></td>
+      <td><input type="checkbox" class="check-input" data-id="14"></td>
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
+      <td><span id="timer14" class="timer">Tiempo restante: 00d 00:00:00</span></td>
     </tr>
   </tbody>
 </table>
-  <p class="mt-4">
-    <strong>Nota:</strong> La hora límite para la entrega de sus actividades es hasta las <strong>6:00pm</strong>. En caso de que se entreguen después del tiempo límite, su actividad se tomará como entrega extemporánea.      
-    <br>Si desean expandir su entrega a más tiempo, solicítenlo con la Lic. Laura Isela Díaz Bernal.
-  </p>
 
-</body>    
-</html>
+<script>
+  // Función para actualizar el contador regresivo hacia la fecha de entrega
+  function updateCountdown() {
+    // Fechas de entrega de cada tarea en formato YYYY-MM-DD
+    const dueDates = {
+      1: new Date('2025-09-01T00:00:00'),
+      2: new Date('2025-09-02T00:00:00'),
+      3: new Date('2025-09-08T00:00:00'),
+      4: new Date('2025-09-09T00:00:00'),
+      5: new Date('2025-09-15T00:00:00'),
+      6: new Date('2025-09-16T00:00:00'),
+      7: new Date('2025-09-24T00:00:00'),
+      8: new Date('2025-09-25T00:00:00'),
+      9: new Date('2025-10-01T00:00:00'),
+      10: new Date('2025-10-02T00:00:00'),
+      11: new Date('2025-10-08T00:00:00'),
+      12: new Date('2025-10-09T00:00:00'),
+      13: new Date('2025-10-15T00:00:00'),
+      14: new Date('2025-10-16T00:00:00'),
+    };
+
+    // Obtener la fecha actual
+    const now = new Date();
+
+    // Iterar sobre cada tarea y actualizar el contador regresivo
+    Object.keys(dueDates).forEach(id => {
+      const dueDate = dueDates[id];
+      const timeDiff = dueDate - now; // Diferencia en milisegundos
+
+      if (timeDiff > 0) {
+        // Calcular días, horas, minutos y segundos restantes
+        const seconds = Math.floor(timeDiff / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        const displayHours = hours % 24;
+        const displayMinutes = minutes % 60;
+        const displaySeconds = seconds % 60;
+
+        // Actualizar el temporizador con la diferencia hacia la fecha de entrega
+        document.getElementById('timer' + id).textContent = 
+          `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
+      } else {
+        // Si ya ha pasado la fecha de entrega
+        document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
+      }
+    });
+  }
+
+  // Llamar a la función cada segundo para actualizar el tiempo
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
