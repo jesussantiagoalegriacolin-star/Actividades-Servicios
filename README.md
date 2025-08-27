@@ -157,7 +157,6 @@ action="https://formspree.io/f/mwpnppbz"
 method="POST">
 <table border="1">
   <thead>
-    <tr>
       <th>Semana</th>
       <th>Tarea</th>
       <th>Fecha de Entrega</th>
@@ -165,11 +164,9 @@ method="POST">
       <th>Notas</th>
       <th>Archivos</th>
       <th>Tiempo Restante</th>
-    </tr>
   </thead>
   <tbody>
            <!-- Semana 1 -->
-    <tr>
       <td>Semana 1</td>
       <td>Realiza la primera tarea</td>
       <td>Lunes 1 Septiembre 2025</td>
@@ -179,7 +176,6 @@ method="POST">
       <td><span id="timer1" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <tr>
       <td>Semana 1</td>
@@ -191,7 +187,6 @@ method="POST">
       <td><span id="timer2" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <!-- Semana 2 -->
     <tr>
@@ -204,9 +199,9 @@ method="POST">
       <td><span id="timer3" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <tr>
+    
       <td>Semana 2</td>
       <td>Revisa los resultados</td>
       <td>Martes 9 Septiembre 2025</td>
@@ -215,9 +210,7 @@ method="POST">
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer4" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-</tr>
-    </tr>
-
+      
     <!-- Semana 3 -->
     <tr>
       <td>Semana 3</td>
@@ -229,7 +222,6 @@ method="POST">
       <td><span id="timer5" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <tr>
       <td>Semana 3</td>
@@ -241,7 +233,6 @@ method="POST">
       <td><span id="timer6" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <!-- Semana 4 -->
     <tr>
@@ -254,7 +245,6 @@ method="POST">
       <td><span id="timer7" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <tr>
       <td>Semana 4</td>
@@ -266,7 +256,6 @@ method="POST">
       <td><span id="timer8" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
 
     <!-- Semana 5 -->
     <tr>
@@ -279,7 +268,7 @@ method="POST">
       <td><span id="timer9" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
+
 
     <tr>
       <td>Semana 5</td>
@@ -291,7 +280,7 @@ method="POST">
       <td><span id="timer10" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
+    
 
     <!-- Semana 6 -->
     <tr>
@@ -304,7 +293,7 @@ method="POST">
       <td><span id="timer11" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
+    
 
     <tr>
       <td>Semana 6</td>
@@ -316,7 +305,7 @@ method="POST">
       <td><span id="timer12" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
+    
 
     <!-- Semana 7 -->
     <tr>
@@ -329,7 +318,7 @@ method="POST">
       <td><span id="timer13" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
 </tr>
-    </tr>
+    
 
     <tr>
       <td>Semana 7</td>
@@ -340,7 +329,6 @@ method="POST">
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer14" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-</tr>
     </tr>
   </tbody>
 </table>
