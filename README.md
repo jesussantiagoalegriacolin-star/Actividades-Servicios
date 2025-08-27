@@ -152,7 +152,9 @@
   <title>Contador de Tiempo</title>
 </head>
 <body>
-
+<form class="form registro"
+action="https://formspree.io/f/mwpnppbz"
+method="POST">
 <table border="1">
   <thead>
     <tr>
