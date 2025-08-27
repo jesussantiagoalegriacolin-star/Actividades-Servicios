@@ -63,7 +63,9 @@
     }
   </style>
 </head>
-
+<form class="form registro"
+action="https://formspree.io/f/mwpnppbz"
+method="POST">
 <body>
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
@@ -175,6 +177,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer1" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -185,6 +189,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer2" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 2 -->
@@ -196,6 +202,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer3" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -206,6 +214,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer4" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 3 -->
@@ -217,6 +227,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer5" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -227,6 +239,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer6" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 4 -->
@@ -238,6 +252,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer7" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -248,6 +264,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer8" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 5 -->
@@ -259,6 +277,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer9" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -269,6 +289,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer10" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 6 -->
@@ -280,6 +302,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer11" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -290,6 +314,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer12" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <!-- Semana 7 -->
@@ -301,6 +327,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer13" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
 
     <tr>
@@ -311,6 +339,8 @@
       <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer14" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+</tr>
     </tr>
   </tbody>
 </table>
@@ -368,5 +398,4 @@
   // Llamar a la función cada segundo para actualizar el tiempo
   setInterval(updateCountdown, 1000);
 </script>
-
-</body>
+<form>
