@@ -13,7 +13,6 @@
 
     h1 {
       color: #0d6efd;
-      /* Azul Bootstrap */
     }
 
     .blue-row {
@@ -63,88 +62,87 @@
     }
   </style>
 </head>
-<form class="form registro"
-action="https://formspree.io/f/mwpnppbz"
-method="POST">
 <body>
+
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
-  <div class="mb-3">
-    <label for="email" class="form-label">Añade una cuenta</label>
-    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-  </div>
+  <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
 
-  <div class="mb-3">
-    <label for="nombreCompleto" class="form-label">Nombre completo</label>
-    <input type="text" class="form-control" id="nombreCompleto" placeholder="Escribe tu nombre completo">
-  </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Añade una cuenta</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
 
-  <div class="mb-3">
-    <label for="nombreBiblioteca" class="form-label">Nombre de la biblioteca</label>
-    <select class="form-select" id="nombreBiblioteca">
-      <option value="" selected>Selecciona una biblioteca</option>
-      <option value="José Luis Álamo Jardón">José Luis Álamo Jardón</option>
-      <option value="Rafael Moreno Montes de Oca">Rafael Moreno Montes de Oca</option>
-      <option value="Guillermina Nateras López">Guillermina Nateras López</option>
-      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
-      <option value="Dr. Urban Boutelegier">Dr. Urban Boutelegier</option>
-      <option value="Michel D’Hooghe">Michel D’Hooghe</option>
-      <option value="Santa Teresita del Niño Jesús">Santa Teresita del Niño Jesús</option>
-      <option value="Biblioteca Santiago Tlacotepec">Biblioteca Santiago Tlacotepec</option>
-      <option value="Biblioteca Santiago Tlaxomulco">Biblioteca Santiago Tlaxomulco</option>
-      <option value="Biblioteca Tecaxic">Biblioteca Tecaxic</option>
-      <option value="Ludoteca San Cristóbal Huichochitlán">Ludoteca San Cristóbal Huichochitlán</option>
-      <option value="Museo Municipal de Calixtlahuaca">Museo Municipal de Calixtlahuaca</option>
-      <option value="Museo del Alfeñique">Museo del Alfeñique</option>
-      <option value="Lic. Jaime Almazán Delgado">Lic. Jaime Almazán Delgado</option>
-      <option value="José María Heredia y Heredia">José María Heredia y Heredia</option>
-      <option value="Leonardo Sánchez Montaño">Leonardo Sánchez Montaño</option>
-      <option value="Otomitl">Otomitl</option>
-      <option value="Concepción García Valdez">Concepción García Valdez</option>
-      <option value="Sor Juana Inés de la Cruz">Sor Juana Inés de la Cruz</option>
-      <option value="Mercedes López Gómeztagle">Mercedes López Gómeztagle</option>
-      <option value="Edelmira Nava Arellano">Edelmira Nava Arellano</option>
-      <option value="Profa. Laura Beatriz Benavides">Profa. Laura Beatriz Benavides</option>
-      <option value="Agustín María Lebrija">Agustín María Lebrija</option>
-      <option value="Rodolfo García Gutiérrez">Rodolfo García Gutiérrez</option>
-      <option value="Laura Méndez de Cuenca">Laura Méndez de Cuenca</option>
-      <option value="Mercedes Carrasco">Mercedes Carrasco</option>
-      <option value="Fray Andrés de Castro">Fray Andrés de Castro</option>
-    </select>
-  </div>
+    <div class="mb-3">
+      <label for="nombreCompleto" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" placeholder="Escribe tu nombre completo">
+    </div>
 
-  <div class="mb-3">
-    <label for="coberturaAtencion" class="form-label">Cobertura de atención / Delegación</label>
-    <select class="form-select" id="coberturaAtencion">
-      <option value="" selected>Selecciona la delegación o cobertura</option>
-      <option value="San Lorenzo Tepaltitlán">San Lorenzo Tepaltitlán</option>
-      <option value="Santa Cruz Atzcapotzaltongo">Santa Cruz Atzcapotzaltongo</option>
-      <option value="San Mateo Oxtotitlán, Nueva Oxtotitlán">San Mateo Oxtotitlán, Nueva Oxtotitlán</option>
-      <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
-      <option value="San Diego de los Padres Cuexcontitlán">San Diego de los Padres Cuexcontitlán</option>
-      <option value="San Cayetano Morelos">San Cayetano Morelos</option>
-      <option value="Morelos, Sánchez">Morelos, Sánchez</option>
-      <option value="Santiago Tlacotepec, San Juan Tilapa">Santiago Tlacotepec, San Juan Tilapa</option>
-      <option value="Santiago Tlaxomulco">Santiago Tlaxomulco</option>
-      <option value="Tecaxic">Tecaxic</option>
-      <option value="San Cristóbal Huichochitlán">San Cristóbal Huichochitlán</option>
-      <option value="Toluca, Estado de México, México y extranjero">Toluca, Estado de México, México y extranjero</option>
-      <option value="La Maquinita, Santiago Miltepec">La Maquinita, Santiago Miltepec</option>
-      <option value="Cacalomacán">Cacalomacán</option>
-      <option value="San Mateo Otzacatipan">San Mateo Otzacatipan</option>
-      <option value="Tlachaloya">Tlachaloya</option>
-      <option value="San Martín Toltepec">San Martín Toltepec</option>
-      <option value="Independencia">Independencia</option>
-      <option value="Capultitlán, Moderna de la Cruz">Capultitlán, Moderna de la Cruz</option>
-      <option value="San Andrés Cuexcontitlán">San Andrés Cuexcontitlán</option>
-      <option value="San Antonio Buenavista, San Buenaventura">San Antonio Buenavista, San Buenaventura</option>
-      <option value="San Pablo Autopan">San Pablo Autopan</option>
-      <option value="Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril">Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril</option>
-      <option value="Calixtlahuaca, San Marcos Yachihuacaltepec">Calixtlahuaca, San Marcos Yachihuacaltepec</option>
-    </select>
-  </div>
+    <div class="mb-3">
+      <label for="nombreBiblioteca" class="form-label">Nombre de la biblioteca</label>
+      <select class="form-select" id="nombreBiblioteca" name="nombreBiblioteca">
+        <option value="" selected>Selecciona una biblioteca</option>
+        <option value="José Luis Álamo Jardón">José Luis Álamo Jardón</option>
+        <option value="Rafael Moreno Montes de Oca">Rafael Moreno Montes de Oca</option>
+        <option value="Guillermina Nateras López">Guillermina Nateras López</option>
+        <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
+        <option value="Dr. Urban Boutelegier">Dr. Urban Boutelegier</option>
+        <option value="Michel D’Hooghe">Michel D’Hooghe</option>
+        <option value="Santa Teresita del Niño Jesús">Santa Teresita del Niño Jesús</option>
+        <option value="Biblioteca Santiago Tlacotepec">Biblioteca Santiago Tlacotepec</option>
+        <option value="Biblioteca Santiago Tlaxomulco">Biblioteca Santiago Tlaxomulco</option>
+        <option value="Biblioteca Tecaxic">Biblioteca Tecaxic</option>
+        <option value="Ludoteca San Cristóbal Huichochitlán">Ludoteca San Cristóbal Huichochitlán</option>
+        <option value="Museo Municipal de Calixtlahuaca">Museo Municipal de Calixtlahuaca</option>
+        <option value="Museo del Alfeñique">Museo del Alfeñique</option>
+        <option value="Lic. Jaime Almazán Delgado">Lic. Jaime Almazán Delgado</option>
+        <option value="José María Heredia y Heredia">José María Heredia y Heredia</option>
+        <option value="Leonardo Sánchez Montaño">Leonardo Sánchez Montaño</option>
+        <option value="Otomitl">Otomitl</option>
+        <option value="Concepción García Valdez">Concepción García Valdez</option>
+        <option value="Sor Juana Inés de la Cruz">Sor Juana Inés de la Cruz</option>
+        <option value="Mercedes López Gómeztagle">Mercedes López Gómeztagle</option>
+        <option value="Edelmira Nava Arellano">Edelmira Nava Arellano</option>
+        <option value="Profa. Laura Beatriz Benavides">Profa. Laura Beatriz Benavides</option>
+        <option value="Agustín María Lebrija">Agustín María Lebrija</option>
+        <option value="Rodolfo García Gutiérrez">Rodolfo García Gutiérrez</option>
+        <option value="Laura Méndez de Cuenca">Laura Méndez de Cuenca</option>
+        <option value="Mercedes Carrasco">Mercedes Carrasco</option>
+        <option value="Fray Andrés de Castro">Fray Andrés de Castro</option>
+      </select>
+    </div>
 
-  <h2 style="text-align:center;">Plan de Septiembre - Octubre 2025</h2>
+    <div class="mb-3">
+      <label for="coberturaAtencion" class="form-label">Cobertura de atención / Delegación</label>
+      <select class="form-select" id="coberturaAtencion" name="coberturaAtencion">
+        <option value="" selected>Selecciona la delegación o cobertura</option>
+        <option value="San Lorenzo Tepaltitlán">San Lorenzo Tepaltitlán</option>
+        <option value="Santa Cruz Atzcapotzaltongo">Santa Cruz Atzcapotzaltongo</option>
+        <option value="San Mateo Oxtotitlán, Nueva Oxtotitlán">San Mateo Oxtotitlán, Nueva Oxtotitlán</option>
+        <option value="San Pedro Totoltepec">San Pedro Totoltepec</option>
+        <option value="San Diego de los Padres Cuexcontitlán">San Diego de los Padres Cuexcontitlán</option>
+        <option value="San Cayetano Morelos">San Cayetano Morelos</option>
+        <option value="Morelos, Sánchez">Morelos, Sánchez</option>
+        <option value="Santiago Tlacotepec, San Juan Tilapa">Santiago Tlacotepec, San Juan Tilapa</option>
+        <option value="Santiago Tlaxomulco">Santiago Tlaxomulco</option>
+        <option value="Tecaxic">Tecaxic</option>
+        <option value="San Cristóbal Huichochitlán">San Cristóbal Huichochitlán</option>
+        <option value="Toluca, Estado de México, México y extranjero">Toluca, Estado de México, México y extranjero</option>
+        <option value="La Maquinita, Santiago Miltepec">La Maquinita, Santiago Miltepec</option>
+        <option value="Cacalomacán">Cacalomacán</option>
+        <option value="San Mateo Otzacatipan">San Mateo Otzacatipan</option>
+        <option value="Tlachaloya">Tlachaloya</option>
+        <option value="San Martín Toltepec">San Martín Toltepec</option>
+        <option value="Independencia">Independencia</option>
+        <option value="Capultitlán, Moderna de la Cruz">Capultitlán, Moderna de la Cruz</option>
+        <option value="San Andrés Cuexcontitlán">San Andrés Cuexcontitlán</option>
+        <option value="San Antonio Buenavista, San Buenaventura">San Antonio Buenavista, San Buenaventura</option>
+        <option value="San Pablo Autopan">San Pablo Autopan</option>
+        <option value="Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril">Seminario Conciliar, Seminario 2 de marzo, Seminario las Torres, Felipe Chávez Becerril</option>
+        <option value="Calixtlahuaca, San Marcos Yachihuacaltepec">Calixtlahuaca, San Marcos Yachihuacaltepec</option>
+      </select>
+    </div>
+<h2 style="text-align:center;">Plan de Septiembre - Octubre 2025</h2>
   <table class="table table-bordered">
    <!DOCTYPE html>
 <html lang="es">
@@ -168,7 +166,7 @@ method="POST">
     </tr>
   </thead>
   <tbody>
-    <!-- Semana 1 -->
+           <!-- Semana 1 -->
     <tr>
       <td>Semana 1</td>
       <td>Realiza la primera tarea</td>
@@ -345,57 +343,60 @@ method="POST">
   </tbody>
 </table>
 
-<script>
-  // Función para actualizar el contador regresivo hacia la fecha de entrega
-  function updateCountdown() {
-    // Fechas de entrega de cada tarea en formato YYYY-MM-DD
-    const dueDates = {
-      1: new Date('2025-09-01T00:00:00'),
-      2: new Date('2025-09-02T00:00:00'),
-      3: new Date('2025-09-08T00:00:00'),
-      4: new Date('2025-09-09T00:00:00'),
-      5: new Date('2025-09-15T00:00:00'),
-      6: new Date('2025-09-16T00:00:00'),
-      7: new Date('2025-09-24T00:00:00'),
-      8: new Date('2025-09-25T00:00:00'),
-      9: new Date('2025-10-01T00:00:00'),
-      10: new Date('2025-10-02T00:00:00'),
-      11: new Date('2025-10-08T00:00:00'),
-      12: new Date('2025-10-09T00:00:00'),
-      13: new Date('2025-10-15T00:00:00'),
-      14: new Date('2025-10-16T00:00:00'),
-    };
+    <div class="mb-3">
+      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
+      <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
+    </div>
 
-    // Obtener la fecha actual
-    const now = new Date();
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
 
-    // Iterar sobre cada tarea y actualizar el contador regresivo
-    Object.keys(dueDates).forEach(id => {
-      const dueDate = dueDates[id];
-      const timeDiff = dueDate - now; // Diferencia en milisegundos
+  <!-- Script al final -->
+  <script>
+    function updateCountdown() {
+      const dueDates = {
+        1: new Date('2025-09-01T00:00:00'),
+        2: new Date('2025-09-02T00:00:00'),
+        3: new Date('2025-09-08T00:00:00'),
+        4: new Date('2025-09-09T00:00:00'),
+        5: new Date('2025-09-15T00:00:00'),
+        6: new Date('2025-09-16T00:00:00'),
+        7: new Date('2025-09-24T00:00:00'),
+        8: new Date('2025-09-25T00:00:00'),
+        9: new Date('2025-10-01T00:00:00'),
+        10: new Date('2025-10-02T00:00:00'),
+        11: new Date('2025-10-08T00:00:00'),
+        12: new Date('2025-10-09T00:00:00'),
+        13: new Date('2025-10-15T00:00:00'),
+        14: new Date('2025-10-16T00:00:00'),
+      };
 
-      if (timeDiff > 0) {
-        // Calcular días, horas, minutos y segundos restantes
-        const seconds = Math.floor(timeDiff / 1000);
-        const minutes = Math.floor(seconds / 60);
-        const hours = Math.floor(minutes / 60);
-        const days = Math.floor(hours / 24);
+      const now = new Date();
 
-        const displayHours = hours % 24;
-        const displayMinutes = minutes % 60;
-        const displaySeconds = seconds % 60;
+      Object.keys(dueDates).forEach(id => {
+        const dueDate = dueDates[id];
+        const timeDiff = dueDate - now;
 
-        // Actualizar el temporizador con la diferencia hacia la fecha de entrega
-        document.getElementById('timer' + id).textContent = 
-          `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
-      } else {
-        // Si ya ha pasado la fecha de entrega
-        document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
-      }
-    });
-  }
+        if (timeDiff > 0) {
+          const seconds = Math.floor(timeDiff / 1000);
+          const minutes = Math.floor(seconds / 60);
+          const hours = Math.floor(minutes / 60);
+          const days = Math.floor(hours / 24);
 
-  // Llamar a la función cada segundo para actualizar el tiempo
-  setInterval(updateCountdown, 1000);
-</script>
-<form>
+          const displayHours = hours % 24;
+          const displayMinutes = minutes % 60;
+          const displaySeconds = seconds % 60;
+
+          document.getElementById('timer' + id).textContent = 
+            `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
+        } else {
+          document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
+        }
+      });
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
