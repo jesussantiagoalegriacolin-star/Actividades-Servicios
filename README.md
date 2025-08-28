@@ -366,7 +366,12 @@ method="POST">
     </tr>
   </tbody>
 </table>
+ <div class="mb-3">
+      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
+      <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
+    </div>
 
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 
   <!-- Script al final -->
