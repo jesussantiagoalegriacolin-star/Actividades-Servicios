@@ -375,7 +375,7 @@ method="POST">
   </form>
 
   <!-- Script al final -->
-  <script>
+ <script>
     function updateCountdown() {
       const dueDates = {
         1: new Date('2025-09-01T00:00:00'),
@@ -411,11 +411,18 @@ method="POST">
           const displaySeconds = seconds % 60;
 
           document.getElementById('timer' + id).textContent = 
-            `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
+            Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')};
         } else {
           document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
         }
       });
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
     }
 
     setInterval(updateCountdown, 1000);
