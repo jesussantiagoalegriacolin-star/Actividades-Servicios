@@ -68,7 +68,7 @@
   <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3">
-      <label for="email" class="form-label">Añade una cuenta</label>
+      <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
       <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
     </div>
 
@@ -156,24 +156,30 @@ action="https://formspree.io/f/mwpnppbz"
 method="POST">
 <table border="1">
   <thead>
-      <th>Semana</th>
-      <th>Tarea</th>
-      <th>Fecha de Entrega</th>
-      <th>Completado</th>
-      <th>Notas</th>
-      <th>Archivos</th>
-      <th>Tiempo Restante</th>
-  </thead>
+        <tr>
+          <th>Semana</th>
+          <th>Tarea</th>
+          <th>Fecha de Entrega</th>
+          <th>No. de asistentes</th>
+          <th>Notas</th>
+          <th>Archivos</th>
+          <th>Tiempo Restante</th>
+          <th>Entrega</th>
+          <th>Evidencia Fotográfica</th>
+        </tr>
+</thead>
   <tbody>
-           <!-- Semana 1 -->
       <td>Semana 1</td>
-      <td>Realiza la primera tarea</td>
-      <td>Lunes 1 Septiembre 2025</td>
-      <td><input type="checkbox" class="check-input" data-id="1"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
-      <td><input type="file" accept="image/*"></td>
-      <td><span id="timer1" class="timer">Tiempo restante: 00d 00:00:00</span></td>
-      <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+  <td>Realiza la primera tarea</td>
+  <td>Lunes 1 Septiembre 2025</td>
+  <td><input type="checkbox" class="check-input" data-id="1"></td>
+  <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
+  <td><input type="file" accept="image/*"></td>
+  <td><span id="timer1" class="timer">Tiempo restante: 00d 00:00:00</span></td>
+  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+  <td><button><input type="file"></button></td>
+  
 </tr>
 
     <tr>
@@ -181,10 +187,13 @@ method="POST">
       <td>Haz el análisis inicial</td>
       <td>Martes 2 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="2"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer2" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+     
 </tr>
 
     <!-- Semana 2 -->
@@ -193,10 +202,13 @@ method="POST">
       <td>Define los objetivos</td>
       <td>Lunes 8 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="3"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer3" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
 
     <tr>
@@ -205,10 +217,13 @@ method="POST">
       <td>Revisa los resultados</td>
       <td>Martes 9 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="4"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer4" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+     
       
     <!-- Semana 3 -->
     <tr>
@@ -216,10 +231,13 @@ method="POST">
       <td>Haz una revisión crítica</td>
       <td>Lunes 15 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="5"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer5" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+     
 </tr>
 
     <tr>
@@ -227,10 +245,12 @@ method="POST">
       <td>Mejora el plan inicial</td>
       <td>Martes 16 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="6"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer6" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
 </tr>
 
     <!-- Semana 4 -->
@@ -239,10 +259,13 @@ method="POST">
       <td>Haz pausas intencionadas</td>
       <td>Miércoles 24 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="7"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer7" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
 
     <tr>
@@ -250,10 +273,13 @@ method="POST">
       <td>Varía el tono y el ritmo</td>
       <td>Jueves 25 Septiembre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="8"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer8" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
 
     <!-- Semana 5 -->
@@ -262,10 +288,13 @@ method="POST">
       <td>Utiliza notas clave</td>
       <td>Miércoles 1 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="9"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer9" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
 
 
@@ -274,10 +303,13 @@ method="POST">
       <td>Establece contacto visual</td>
       <td>Jueves 2 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="10"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer10" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
     
 
@@ -287,10 +319,13 @@ method="POST">
       <td>Sonríe</td>
       <td>Miércoles 8 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="11"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer11" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
     
 
@@ -299,10 +334,12 @@ method="POST">
       <td>Sé honesto contigo mismo</td>
       <td>Jueves 9 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="12"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa"></textarea></td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer12" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+      
 </tr>
     
 
@@ -312,10 +349,13 @@ method="POST">
       <td>Capacitación</td>
       <td>Miércoles 15 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="13"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer13" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
+
 </tr>
     
 
@@ -324,10 +364,12 @@ method="POST">
       <td>Inicio de la siguiente etapa</td>
       <td>Jueves 16 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="14"></td>
-      <td><textarea placeholder="Escribe aquí la nota informativa..."></textarea></td>
+      <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
+</td>
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer14" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
+      <td><button><input type="file"></button></td>
     </tr>
   </tbody>
 </table>
