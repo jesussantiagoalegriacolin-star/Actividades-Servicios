@@ -383,51 +383,76 @@ method="POST">
 
   <!-- Script al final -->
  <script>
-    function updateCountdown() {
-      const dueDates = {
-        1: new Date('2025-09-01T00:00:00'),
-        2: new Date('2025-09-02T00:00:00'),
-        3: new Date('2025-09-08T00:00:00'),
-        4: new Date('2025-09-09T00:00:00'),
-        5: new Date('2025-09-15T00:00:00'),
-        6: new Date('2025-09-16T00:00:00'),
-        7: new Date('2025-09-24T00:00:00'),
-        8: new Date('2025-09-25T00:00:00'),
-        9: new Date('2025-10-01T00:00:00'),
-        10: new Date('2025-10-02T00:00:00'),
-        11: new Date('2025-10-08T00:00:00'),
-        12: new Date('2025-10-09T00:00:00'),
-        13: new Date('2025-10-15T00:00:00'),
-        14: new Date('2025-10-16T00:00:00'),
-      };
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Tiempo</title>
+</head>
+<body>
 
-      const now = new Date();
+    <!-- Contenedores para los contadores -->
+    <div id="timer1"></div>
+    <div id="timer2"></div>
+    <div id="timer3"></div>
+    <div id="timer4"></div>
+    <div id="timer5"></div>
+    <div id="timer6"></div>
+    <div id="timer7"></div>
+    <div id="timer8"></div>
+    <div id="timer9"></div>
+    <div id="timer10"></div>
+    <div id="timer11"></div>
+    <div id="timer12"></div>
+    <div id="timer13"></div>
+    <div id="timer14"></div>
 
-      Object.keys(dueDates).forEach(id => {
-        const dueDate = dueDates[id];
-        const timeDiff = dueDate - now;
+    <script>
+        function updateCountdown() {
+            const dueDates = {
+                1: new Date('2025-09-01T00:00:00'),
+                2: new Date('2025-09-02T00:00:00'),
+                3: new Date('2025-09-08T00:00:00'),
+                4: new Date('2025-09-09T00:00:00'),
+                5: new Date('2025-09-15T00:00:00'),
+                6: new Date('2025-09-16T00:00:00'),
+                7: new Date('2025-09-24T00:00:00'),
+                8: new Date('2025-09-25T00:00:00'),
+                9: new Date('2025-10-01T00:00:00'),
+                10: new Date('2025-10-02T00:00:00'),
+                11: new Date('2025-10-08T00:00:00'),
+                12: new Date('2025-10-09T00:00:00'),
+                13: new Date('2025-10-15T00:00:00'),
+                14: new Date('2025-10-16T00:00:00'),
+            };
 
-        if (timeDiff > 0) {
-          const seconds = Math.floor(timeDiff / 1000);
-          const minutes = Math.floor(seconds / 60);
-          const hours = Math.floor(minutes / 60);
-          const days = Math.floor(hours / 24);
+            const now = new Date();
 
-          const displayHours = hours % 24;
-          const displayMinutes = minutes % 60;
-          const displaySeconds = seconds % 60;
+            Object.keys(dueDates).forEach(id => {
+                const dueDate = dueDates[id];
+                const timeDiff = dueDate - now;
 
-          document.getElementById('timer' + id).textContent = 
-            `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
-        } else {
-          document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
+                if (timeDiff > 0) {
+                    const seconds = Math.floor(timeDiff / 1000);
+                    const minutes = Math.floor(seconds / 60);
+                    const hours = Math.floor(minutes / 60);
+                    const days = Math.floor(hours / 24);
+
+                    const displayHours = hours % 24;
+                    const displayMinutes = minutes % 60;
+                    const displaySeconds = seconds % 60;
+
+                    document.getElementById('timer' + id).textContent = 
+                        `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
+                } else {
+                    document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
+                }
+            });
         }
-      });
-    }
 
-    setInterval(updateCountdown, 1000);
-  </script>
+        setInterval(updateCountdown, 1000); // Actualiza el contador cada segundo
+    </script>
 
 </body>
 </html>
-
