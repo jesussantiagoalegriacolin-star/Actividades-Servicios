@@ -367,7 +367,7 @@ method="POST">
   </tbody>
 </table>
  <div class="mb-3">
-      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
+      <label for="observaciones" class="form-label"></label>
       <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
     </div>
 
@@ -411,7 +411,7 @@ method="POST">
           const displaySeconds = seconds % 60;
 
           document.getElementById('timer' + id).textContent = 
-            Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')};
+            `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
         } else {
           document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
         }
@@ -423,10 +423,4 @@ method="POST">
 
 </body>
 </html>
-    }
 
-    setInterval(updateCountdown, 1000);
-  </script>
-
-</body>
-</html>
