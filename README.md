@@ -410,48 +410,40 @@ method="POST">
 
     <script>
         function updateCountdown() {
-            const dueDates = {
-                1: new Date('2025-09-01T00:00:00'),
-                2: new Date('2025-09-02T00:00:00'),
-                3: new Date('2025-09-08T00:00:00'),
-                4: new Date('2025-09-09T00:00:00'),
-                5: new Date('2025-09-15T00:00:00'),
-                6: new Date('2025-09-16T00:00:00'),
-                7: new Date('2025-09-24T00:00:00'),
-                8: new Date('2025-09-25T00:00:00'),
-                9: new Date('2025-10-01T00:00:00'),
-                10: new Date('2025-10-02T00:00:00'),
-                11: new Date('2025-10-08T00:00:00'),
-                12: new Date('2025-10-09T00:00:00'),
-                13: new Date('2025-10-15T00:00:00'),
-                14: new Date('2025-10-16T00:00:00'),
-            };
+    const now = new Date();
 
-            const now = new Date();
+    // Crear la fecha de hoy a las 6:00 PM
+    const todayDeadline = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate(),
+        18, 0, 0 // 6:00 PM
+    );
 
-            Object.keys(dueDates).forEach(id => {
-                const dueDate = dueDates[id];
-                const timeDiff = dueDate - now;
+    // Si ya pasaron las 6:00 PM, se puede mostrar "Tiempo de entrega alcanzado"
+    const timeDiff = todayDeadline - now;
 
-                if (timeDiff > 0) {
-                    const seconds = Math.floor(timeDiff / 1000);
-                    const minutes = Math.floor(seconds / 60);
-                    const hours = Math.floor(minutes / 60);
-                    const days = Math.floor(hours / 24);
+    const timerElement = document.getElementById('timerHoy');
 
-                    const displayHours = hours % 24;
-                    const displayMinutes = minutes % 60;
-                    const displaySeconds = seconds % 60;
+    if (timeDiff > 0) {
+        const seconds = Math.floor(timeDiff / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
 
-                    document.getElementById('timer' + id).textContent = 
-                        `Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
-                } else {
-                    document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
-                }
-            });
-        }
+        const displayHours = hours % 24;
+        const displayMinutes = minutes % 60;
+        const displaySeconds = seconds % 60;
 
-        setInterval(updateCountdown, 1000); // Actualiza el contador cada segundo
+        timerElement.textContent = 
+            `Tiempo restante hoy: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')}`;
+    } else {
+        timerElement.textContent = "¡Tiempo de entrega de hoy alcanzado!";
+    }
+}
+
+setInterval(updateCountdown, 1000); // Actualiza el contador cada segundo
+
     </script>
 
 </body>
