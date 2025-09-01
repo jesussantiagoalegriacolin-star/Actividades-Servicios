@@ -156,7 +156,7 @@ action="https://formspree.io/f/mwpnppbz"
 method="POST">
 <table border="1">
   <thead>
-        <tr>
+        
           <th>Semana</th>
           <th>Tarea</th>
           <th>Fecha de Entrega</th>
@@ -166,7 +166,7 @@ method="POST">
           <th>Tiempo Restante</th>
           <th>Entrega</th>
           <th>Evidencia Fotográfica</th>
-        </tr>
+        
 </thead>
   <tbody>
       <td>Semana 1</td>
@@ -180,7 +180,7 @@ method="POST">
   <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
   <td><button><input type="file"></button></td>
   
-</tr>
+
 
     <tr>
       <td>Semana 1</td>
@@ -194,7 +194,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
      
-</tr>
+
 
     <!-- Semana 2 -->
     <tr>
@@ -209,10 +209,9 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
 
     <tr>
-    
       <td>Semana 2</td>
       <td>Revisa los resultados</td>
       <td>Martes 9 Septiembre 2025</td>
@@ -238,7 +237,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
      
-</tr>
+
 
     <tr>
       <td>Semana 3</td>
@@ -251,7 +250,7 @@ method="POST">
       <td><span id="timer6" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
-</tr>
+
 
     <!-- Semana 4 -->
     <tr>
@@ -266,7 +265,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
 
     <tr>
       <td>Semana 4</td>
@@ -280,7 +279,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
 
     <!-- Semana 5 -->
     <tr>
@@ -295,7 +294,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
 
 
     <tr>
@@ -304,13 +303,13 @@ method="POST">
       <td>Jueves 2 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="10"></td>
       <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
-</td>
+
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer10" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
     
 
     <!-- Semana 6 -->
@@ -320,13 +319,13 @@ method="POST">
       <td>Miércoles 8 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="11"></td>
       <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
-</td>
+
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer11" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
     
 
     <tr>
@@ -340,7 +339,7 @@ method="POST">
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
       
-</tr>
+
     
 
     <!-- Semana 7 -->
@@ -350,13 +349,13 @@ method="POST">
       <td>Miércoles 15 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="13"></td>
       <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
-</td>
+
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer13" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
       <td><button><input type="file"></button></td>
 
-</tr>
+
     
 
     <tr>
@@ -365,7 +364,7 @@ method="POST">
       <td>Jueves 16 Octubre 2025</td>
       <td><input type="checkbox" class="check-input" data-id="14"></td>
       <td><textarea name="notes1" placeholder="Añade aquí tu nota informativa" style="resize: both; width: 300px; height: 150px;"></textarea>
-</td>
+
       <td><input type="file" accept="image/*"></td>
       <td><span id="timer14" class="timer">Tiempo restante: 00d 00:00:00</span></td>
       <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
