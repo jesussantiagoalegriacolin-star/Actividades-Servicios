@@ -350,7 +350,7 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 <form class="form registro"
-action="https://formspree.io/f/mwpnppbz"
+action="https://formspree.io/f/mandvvpr"
 method="POST">
    <script>
     function updateCountdown() {
