@@ -278,6 +278,17 @@
 <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
+  label>
+    Your email:
+    <input type="educaciontoluca2527@gmail.com" name="educaciontoluca2527@gmail.com">
+  </label>
+  <label>
+    Your message:
+    <textarea name="Formulario enviado con exito"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
    <script>
     function updateCountdown() {
       const dueDates = {
