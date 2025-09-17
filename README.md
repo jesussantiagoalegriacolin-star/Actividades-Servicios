@@ -1,7 +1,6 @@
 # Registro de actividades club de tareas
 <html lang="es">
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/hashids@2.2.10/dist/hashids.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Servicios Sociales Registro</title>
@@ -61,7 +60,6 @@
       color: #d63384;
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/hashids@2.2.10/dist/hashids.min.js"></script>
 </head>
 <body>
 
@@ -70,12 +68,9 @@
   <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3">
-  <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
-  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-  <input type="hidden" id="hashid" name="hashid">
-  <small id="hashidDisplay" class="form-text text-muted"></small>
-</div>
-
+      <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
 
     <div class="mb-3">
       <label for="nombreCompleto" class="form-label">Nombre completo</label>
@@ -116,6 +111,7 @@
       </select>
     </div>
 
+    
     <div class="mb-3">
       <label for="coberturaAtencion" class="form-label">Cobertura de atención / Delegación</label>
       <select class="form-select" id="coberturaAtencion" name="coberturaAtencion">
@@ -272,7 +268,14 @@
     </tr>
   </tbody>
 </table>
-<form class="form registro"
+
+    <div class="mb-3">
+      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
+      <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
 </form>
