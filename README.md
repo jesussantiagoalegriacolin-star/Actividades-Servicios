@@ -275,7 +275,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
-  <form class="form registro"
+  <form
 action="https://formspree.io/f/mandvvpr"
 method="POST">
 </form>
