@@ -278,7 +278,7 @@
 <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
-  label>
+  <label>
     Your email:
     <input name="educaciontoluca2527@gmail.com">
   </label>
