@@ -1,6 +1,7 @@
 # Registro de actividades club de tareas
 <html lang="es">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/hashids@2.2.10/dist/hashids.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Servicios Sociales Registro</title>
@@ -69,10 +70,12 @@
   <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3">
-      <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-        <input type="hidden" id="hashid" name="hashid">
-    </div>
+  <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+  <input type="hidden" id="hashid" name="hashid">
+  <small id="hashidDisplay" class="form-text text-muted"></small> <!-- OPCIONAL -->
+</div>
+
 
     <div class="mb-3">
       <label for="nombreCompleto" class="form-label">Nombre completo</label>
@@ -373,6 +376,24 @@ method="POST">
   setInterval(updateCountdown, 1000);
   // Ejecutar al cargar
   updateCountdown();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("email");
+    const hashidInput = document.getElementById("hashid");
+    const hashids = new Hashids("registroClubTareas", 8); // Salt + min length
+
+    emailInput.addEventListener("blur", function () {
+      const emailValue = emailInput.value.trim();
+
+      if (emailValue !== "") {
+        // Convertir cada carácter del email a código ASCII y sumar
+        const asciiSum = emailValue.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0);
+        const hash = hashids.encode(asciiSum);
+        hashidInput.value = hash;
+      }
+    });
+  });
 </script>
 
 </body>
