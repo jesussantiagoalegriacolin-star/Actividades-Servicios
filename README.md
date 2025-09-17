@@ -272,6 +272,10 @@
 <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
+   <label>
+    Your email:
+    <input type="educaciontoluca2527@gmail.com" name="educaciontoluca2527@gmail.com">
+  </label>
 </form>
    <script>
     function updateCountdown() {
@@ -369,19 +373,6 @@ method="POST">
   setInterval(updateCountdown, 1000);
   // Ejecutar al cargar
   updateCountdown();
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form.registro");
-    const hashidInput = document.getElementById("hashid");
-
-    const hashids = new Hashids("mi_clave_secreta", 8); // Puedes cambiar la clave
-
-    const baseNumber = Date.now(); // Puedes usar otro valor base si prefieres
-    const hash = hashids.encode(baseNumber);
-
-    hashidInput.value = hash;
-  });
 </script>
 
 </body>
