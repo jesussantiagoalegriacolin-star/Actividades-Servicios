@@ -73,7 +73,7 @@
   <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
   <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
   <input type="hidden" id="hashid" name="hashid">
-  <small id="hashidDisplay" class="form-text text-muted"></small> <!-- OPCIONAL -->
+  <small id="hashidDisplay" class="form-text text-muted"></small>
 </div>
 
 
@@ -275,10 +275,6 @@
 <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
-   <label>
-    Your email:
-    <input type="educaciontoluca2527@gmail.com" name="educaciontoluca2527@gmail.com">
-  </label>
 </form>
    <script>
     function updateCountdown() {
