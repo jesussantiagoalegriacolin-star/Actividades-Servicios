@@ -60,6 +60,7 @@
       color: #d63384;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/hashids@2.2.10/dist/hashids.min.js"></script>
 </head>
 <body>
 
@@ -70,6 +71,7 @@
     <div class="mb-3">
       <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
       <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <input type="hidden" id="hashid" name="hashid">
     </div>
 
     <div class="mb-3">
@@ -267,14 +269,6 @@
     </tr>
   </tbody>
 </table>
-
-    <div class="mb-3">
-      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
-      <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
 <form class="form registro"
 action="https://formspree.io/f/mandvvpr"
 method="POST">
@@ -375,6 +369,19 @@ method="POST">
   setInterval(updateCountdown, 1000);
   // Ejecutar al cargar
   updateCountdown();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form.registro");
+    const hashidInput = document.getElementById("hashid");
+
+    const hashids = new Hashids("mi_clave_secreta", 8); // Puedes cambiar la clave
+
+    const baseNumber = Date.now(); // Puedes usar otro valor base si prefieres
+    const hash = hashids.encode(baseNumber);
+
+    hashidInput.value = hash;
+  });
 </script>
 
 </body>
