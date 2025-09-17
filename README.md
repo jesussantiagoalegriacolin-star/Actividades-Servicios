@@ -373,24 +373,6 @@ method="POST">
   // Ejecutar al cargar
   updateCountdown();
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const emailInput = document.getElementById("email");
-    const hashidInput = document.getElementById("hashid");
-    const hashids = new Hashids("registroClubTareas", 8); // Salt + min length
-
-    emailInput.addEventListener("blur", function () {
-      const emailValue = emailInput.value.trim();
-
-      if (emailValue !== "") {
-        // Convertir cada carácter del email a código ASCII y sumar
-        const asciiSum = emailValue.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0);
-        const hash = hashids.encode(asciiSum);
-        hashidInput.value = hash;
-      }
-    });
-  });
-</script>
 
 </body>
 </html>
