@@ -167,189 +167,117 @@
   </thead>
   <tbody>
 
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Haz pausas intencionadas</td>
     <td>Miércoles 24 Septiembre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-09-24T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="file" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-
-    </td>
-  </tr>
-</form>
+    <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-09-24T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+  
   <tr>
     <td>Semana 4</td>
     <td>Varia el tono y ritmo</td>
     <td>Miércoles 25 Septiembre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-09-25T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-    </td>
-  </tr>
-</form>
+    <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-09-25T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 5</td>
     <td>Utiiza notas clave</td>
     <td>Miércoles 1 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-01T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-    </td>
-  </tr>
-</form>
+    <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-01T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 5</td>
     <td>Establece contacto visual</td>
     <td>Miércoles 2 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-02T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-    </td>
-  </tr>
-</form>
+   <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-02T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 6</td>
     <td>Sonrie</td>
     <td>Miércoles 8 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-08T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-    </td>
-  </tr>
-</form>
+    <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-08T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 6</td>
     <td>Se honesto contigo mismo</td>
     <td>Miércoles 9 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-09T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-    </td>
-  </tr>
-</form>
+   <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-09T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 7</td>
     <td>Capacitacion</td>
     <td>Miércoles 15 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-15T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-    </td>
-  </tr>
-</form>
+   <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-15T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
+
   <tr>
     <td>Semana 7</td>
     <td>Inicia la siguiente etapa</td>
     <td>Miércoles 16 Octubre 2025</td>
-    <td>
-      <input type="checkbox" name="asistencia"> Asistió
-    </td>
-    <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-    </td>
-    <td>
-      <span class="timer" data-fecha="2025-10-16T23:59:59"></span>
-    </td>
-    <td>
-      <input type="file" name="evidencia" required>
-    </td>
-    <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-      <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-    </td>
-  </tr>
-</form>
+   <td><input type="checkbox" name="asistencia"> Asistió</td>
+  <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
+  <td><span class="timer" data-fecha="2025-10-16T23:59:59"></span></td>
+  <td><input type="file" name="evidencia" required></td>
+  <td>
+    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+    <button type="submit" class="btn btn-primary">Entregar</button>
+  </td>
+</tr>
   </tbody>
 </table>
 
