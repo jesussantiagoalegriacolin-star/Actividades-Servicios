@@ -161,8 +161,7 @@
       <th>Fecha de Entrega</th>
       <th>No. de Asistentes</th>
       <th>Nota Informativa</th>
-      <th>Actividades</th>
-      <th>Tiempo Restante</th>
+      <th>Archivos</th>
     </tr>
   </thead>
   <tbody>
