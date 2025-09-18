@@ -62,12 +62,11 @@
   </style>
 </head>
 <body>
-
-  <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
-
   <form class="form-register"
      action="https://formspree.io/f/xgvlgvvd"
     method="POST
+    >
+  <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
     <div class="mb-3">
       <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
