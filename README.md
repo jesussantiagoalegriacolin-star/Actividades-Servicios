@@ -161,104 +161,204 @@
       <th>Fecha de Entrega</th>
       <th>No. de Asistentes</th>
       <th>Nota Informativa</th>
+      <th>Actividades</th>
       <th>Tiempo Restante</th>
     </tr>
   </thead>
   <tbody>
 
-<!-- Semana 4 -->
-<tr>
-  <td>Semana 4</td>
-  <td>Haz pausas intencionadas</td>
-  <td>Miércoles 24 Septiembre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-09-24T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 4</td>
+    <td>Haz pausas intencionadas</td>
+    <td>Miércoles 24 Septiembre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-09-24T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
 
-<tr>
-  <td>Semana 4</td>
-  <td>Varía el tono y el ritmo</td>
-  <td>Jueves 25 Septiembre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-09-25T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 4</td>
+    <td>Varia el tono y ritmo</td>
+    <td>Miércoles 25 Septiembre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-09-25T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
 
-<!-- Semana 5 -->
-<tr>
-  <td>Semana 5</td>
-  <td>Utiliza notas clave</td>
-  <td>Miércoles 1 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-10-01T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
 
-<tr>
-  <td>Semana 5</td>
-  <td>Establece contacto visual</td>
-  <td>Jueves 2 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-10-02T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 5</td>
+    <td>Utiiza notas clave</td>
+    <td>Miércoles 1 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-01T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
 
-<!-- Semana 6 -->
-<tr>
-  <td>Semana 6</td>
-  <td>Sonríe</td>
-  <td>Miércoles 8 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-10-08T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
 
-<tr>
-  <td>Semana 6</td>
-  <td>Sé honesto contigo mismo</td>
-  <td>Jueves 9 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><input type="file" accept="image/*"></td>
-  <td><span class="timer" data-fecha="2025-10-09T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 5</td>
+    <td>Establece contacto visual</td>
+    <td>Miércoles 2 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-02T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
 
-<!-- Semana 7 -->
-<tr>
-  <td>Semana 7</td>
-  <td>Capacitación</td>
-  <td>Miércoles 15 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-10-15T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 6</td>
+    <td>Sonrie</td>
+    <td>Miércoles 8 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-08T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 6</td>
+    <td>Se honesto contigo mismo</td>
+    <td>Miércoles 9 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-09T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
 
-<tr>
-  <td>Semana 7</td>
-  <td>Inicio de la siguiente etapa</td>
-  <td>Jueves 16 Octubre 2025</td>
-  <td><input type="checkbox" class="check-input" data-id="1"></td>
-  <td><textarea class="nota-informativa" placeholder="Escribe aquí la nota informativa..."></textarea></td>
-  <td><span class="timer" data-fecha="2025-10-16T23:59:59">Tiempo restante: 00d 00:00:00</span></td>
-  <td><button class="btn btn-primary" onclick="entregarActividad(this)">Entregar</button></td>
-  <td><button><input type="file"></button></td>
-</tr>
-    </tr>
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 7</td>
+    <td>Capacitacion</td>
+    <td>Miércoles 15 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-15T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
+
+<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <tr>
+    <td>Semana 7</td>
+    <td>Inicia la siguiente etapa</td>
+    <td>Miércoles 16 Octubre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
+    <td>
+      <span class="timer" data-fecha="2025-10-16T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
+</form>
   </tbody>
 </table>
 
@@ -275,21 +375,14 @@ method="POST">
    <script>
     function updateCountdown() {
       const dueDates = {
-        1: new Date('2025-09-01T00:00:00'),
-        2: new Date('2025-09-02T00:00:00'),
-        3: new Date('2025-09-08T00:00:00'),
-        4: new Date('2025-09-09T00:00:00'),
-        5: new Date('2025-09-15T00:00:00'),
-        6: new Date('2025-09-16T00:00:00'),
-        7: new Date('2025-09-24T00:00:00'),
-        8: new Date('2025-09-25T00:00:00'),
-        9: new Date('2025-10-01T00:00:00'),
-        10: new Date('2025-10-02T00:00:00'),
-        11: new Date('2025-10-08T00:00:00'),
-        12: new Date('2025-10-09T00:00:00'),
-        13: new Date('2025-10-15T00:00:00'),
-        14: new Date('2025-10-16T00:00:00'),
-      };
+       <span id="timer7" class="timer" data-fecha="2025-09-24T23:59:59"></span>
+       <span id="timer8" class="timer" data-fecha="2025-09-25T23:59:59"></span>
+       <span id="timer9" class="timer" data-fecha="2025-10-01T23:59:59"></span>
+       <span id="timer10" class="timer" data-fecha="2025-10-02T23:59:59"></span>
+       <span id="timer14" class="timer" data-fecha="2025-10-08T23:59:59"></span>
+       <span id="timer14" class="timer" data-fecha="2025-10-09T23:59:59"></span>
+      <span id="timer14" class="timer" data-fecha="2025-10-15T23:59:59"></span>
+      <span id="timer14" class="timer" data-fecha="2025-10-16T23:59:59"></span>
 
       const now = new Date();
 
