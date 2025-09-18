@@ -367,10 +367,10 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
-  <form
-action="https://formspree.io/f/mandvvpr"
-method="POST">
-</form>
+ <form class="form-register"
+     action="https://formspree.io/f/xgvlgvvd"
+    method="POST
+   >
    <script>
     function updateCountdown() {
       const dueDates = {
