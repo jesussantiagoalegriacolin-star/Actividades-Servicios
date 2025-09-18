@@ -63,7 +63,7 @@
 </head>
 <body>
   <form class="form-register"
-     action="https://formspree.io/f/xgvlgvvd"
+  action="https://formspree.io/f/xgvlgvvd"
     method="POST
     >
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
@@ -274,7 +274,7 @@
 </tr>
   </tbody>
 </table>
-   
+   <form/>
 </body>
 </html>
 
