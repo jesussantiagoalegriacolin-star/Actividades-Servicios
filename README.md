@@ -166,7 +166,7 @@
   </thead>
   <tbody>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Haz pausas intencionadas</td>
@@ -184,13 +184,15 @@
       <input type="file" name="evidencia" required>
     </td>
     <td>
-      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <input type="file" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
+
     </td>
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Varia el tono y ritmo</td>
@@ -210,12 +212,14 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
+
     </td>
   </tr>
 </form>
 
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Utiiza notas clave</td>
@@ -235,12 +239,13 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
 
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Establece contacto visual</td>
@@ -260,11 +265,12 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Sonrie</td>
@@ -284,10 +290,11 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Se honesto contigo mismo</td>
@@ -307,11 +314,12 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Capacitacion</td>
@@ -331,11 +339,12 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Inicia la siguiente etapa</td>
@@ -355,6 +364,7 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
+      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
@@ -366,7 +376,15 @@
     method="POST
    >
    <script>
-    <script
+  document.addEventListener("DOMContentLoaded", () => {
+    const hashInputs = document.querySelectorAll('input[name="hashid"]');
+    hashInputs.forEach(input => {
+      const timestamp = Date.now().toString();
+      const hash = btoa(timestamp + Math.random().toString()); // simple hash base64
+      input.value = hash;
+    });
+  });
+</script>
   
 
 </body>
