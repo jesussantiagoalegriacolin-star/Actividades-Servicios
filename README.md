@@ -161,6 +161,7 @@
       <th>Fecha de Entrega</th>
       <th>No. de Asistentes</th>
       <th>Nota Informativa</th>
+      
       <th>Archivos</th>
     </tr>
   </thead>
@@ -191,8 +192,6 @@
     </td>
   </tr>
 </form>
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Varia el tono y ritmo</td>
@@ -212,14 +211,9 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
-
     </td>
   </tr>
 </form>
-
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Utiiza notas clave</td>
@@ -239,13 +233,9 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
-
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Establece contacto visual</td>
@@ -265,12 +255,9 @@
     <td>
       <input type="hidden" name="actividad" value="Haz pausas intencionadas">
       <button type="submit" class="btn btn-primary">Entregar</button>
-      <input type="hidden" name="hashid" value="">
     </td>
   </tr>
 </form>
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Sonrie</td>
@@ -294,7 +281,6 @@
     </td>
   </tr>
 </form>
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Se honesto contigo mismo</td>
@@ -318,8 +304,6 @@
     </td>
   </tr>
 </form>
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Capacitacion</td>
@@ -343,8 +327,6 @@
     </td>
   </tr>
 </form>
-
-<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Inicia la siguiente etapa</td>
@@ -375,18 +357,6 @@
      action="https://formspree.io/f/xgvlgvvd"
     method="POST
    >
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hashInputs = document.querySelectorAll('input[name="hashid"]');
-    hashInputs.forEach(input => {
-      const timestamp = Date.now().toString();
-      const hash = btoa(timestamp + Math.random().toString()); // simple hash base64
-      input.value = hash;
-    });
-  });
-</script>
-  
-
 </body>
 </html>
 
