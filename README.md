@@ -361,106 +361,14 @@
   </tbody>
 </table>
 
-    <div class="mb-3">
-      <label for="observaciones" class="form-label">Observaciones (opcional)</label>
-      <textarea id="observaciones" name="observaciones" class="form-control" placeholder="Escribe cualquier comentario o duda."></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
  <form class="form-register"
      action="https://formspree.io/f/xgvlgvvd"
     method="POST
    >
    <script>
-    function updateCountdown() {
-      const dueDates = {
-       <span id="timer7" class="timer" data-fecha="2025-09-24T23:59:59"></span>
-       <span id="timer8" class="timer" data-fecha="2025-09-25T23:59:59"></span>
-       <span id="timer9" class="timer" data-fecha="2025-10-01T23:59:59"></span>
-       <span id="timer10" class="timer" data-fecha="2025-10-02T23:59:59"></span>
-       <span id="timer14" class="timer" data-fecha="2025-10-08T23:59:59"></span>
-       <span id="timer14" class="timer" data-fecha="2025-10-09T23:59:59"></span>
-      <span id="timer14" class="timer" data-fecha="2025-10-15T23:59:59"></span>
-      <span id="timer14" class="timer" data-fecha="2025-10-16T23:59:59"></span>
-
-      const now = new Date();
-
-      Object.keys(dueDates).forEach(id => {
-        const dueDate = dueDates[id];
-        const timeDiff = dueDate - now;
-
-        if (timeDiff > 0) {
-          const seconds = Math.floor(timeDiff / 1000);
-          const minutes = Math.floor(seconds / 60);
-          const hours = Math.floor(minutes / 60);
-          const days = Math.floor(hours / 24);
-
-          const displayHours = hours % 24;
-          const displayMinutes = minutes % 60;
-          const displaySeconds = seconds % 60;
-
-          document.getElementById('timer' + id).textContent = 
-            Tiempo restante: ${days}d ${displayHours.toString().padStart(2, '0')}:${displayMinutes.toString().padStart(2, '0')}:${displaySeconds.toString().padStart(2, '0')};
-        } else {
-          document.getElementById('timer' + id).textContent = "¡Tiempo de entrega alcanzado!";
-        }
-      });
-    }
-
-    setInterval(updateCountdown, 1000);
-  </script>
-  <script>
-  // Fechas de entrega
-  const dueDates = {
-    1: '2025-09-01T00:00:00',
-    2: '2025-09-02T00:00:00',
-    3: '2025-09-08T00:00:00',
-    4: '2025-09-09T00:00:00',
-    5: '2025-09-15T00:00:00',
-    6: '2025-09-16T00:00:00',
-    7: '2025-09-24T00:00:00',
-    8: '2025-09-25T00:00:00',
-    9: '2025-10-01T00:00:00',
-    10: '2025-10-02T00:00:00',
-    11: '2025-10-08T00:00:00',
-    12: '2025-10-09T00:00:00',
-    13: '2025-10-15T00:00:00',
-    14: '2025-10-16T00:00:00',
-  };
-
-  function formatTimeUnit(unit) {
-    return unit.toString().padStart(2, '0');
-  }
-
-  function updateCountdown() {
-    const now = new Date();
-
-    Object.entries(dueDates).forEach(([id, dateString]) => {
-      const dueDate = new Date(dateString);
-      const timeDiff = dueDate.getTime() - now.getTime();
-      const timerElement = document.getElementById(`timer${id}`);
-
-      if (!timerElement) return;
-
-      if (timeDiff > 0) {
-        const totalSeconds = Math.floor(timeDiff / 1000);
-        const days = Math.floor(totalSeconds / 86400);
-        const hours = Math.floor((totalSeconds % 86400) / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        timerElement.textContent = `⏳ Tiempo restante: ${days}d ${formatTimeUnit(hours)}:${formatTimeUnit(minutes)}:${formatTimeUnit(seconds)}`;
-      } else {
-        timerElement.textContent = "✅ ¡Tiempo de entrega alcanzado!";
-      }
-    });
-  }
-
-  // Actualiza cada segundo
-  setInterval(updateCountdown, 1000);
-  // Ejecutar al cargar
-  updateCountdown();
-</script>
+    <script
+  
 
 </body>
 </html>
+
