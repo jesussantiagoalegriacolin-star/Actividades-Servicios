@@ -65,7 +65,9 @@
 
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
-  <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <form class="form-register"
+     action="https://formspree.io/f/xgvlgvvd"
+    method="POST
 
     <div class="mb-3">
       <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
@@ -273,11 +275,7 @@
 </tr>
   </tbody>
 </table>
-
- <form class="form-register"
-     action="https://formspree.io/f/xgvlgvvd"
-    method="POST
-   >
+   
 </body>
 </html>
 
