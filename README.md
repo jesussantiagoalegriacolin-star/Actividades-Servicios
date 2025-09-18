@@ -66,6 +66,10 @@
   action="https://formspree.io/f/xgvlgvvd"
     method="POST
     >
+    <label>
+    Your email:
+    <input type="email" name="educaciontoluca2527@gmail.com">
+  </label>
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
     <div class="mb-3">
