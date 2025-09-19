@@ -166,7 +166,6 @@
       <th>Fecha de Entrega</th>
       <th>No. de Asistentes</th>
       <th>Nota Informativa</th>
-      
       <th>Archivos</th>
     </tr>
   </thead>
@@ -180,7 +179,7 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-09-24T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button>
+  <td><button type="submit" class="btn btn-primary">Entregar</button><td/>
   </td>
 </tr>
   
