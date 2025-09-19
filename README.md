@@ -179,8 +179,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-09-24T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-  </td>
+ <td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
 </tr>
   
   <tr>
@@ -191,8 +192,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-09-25T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-  </td>
+ <td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
 </tr>
 
   <tr>
@@ -203,9 +205,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-10-01T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-  
-  </td>
+ <td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
 </tr>
 
   <tr>
@@ -216,8 +218,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-10-02T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-  </td>
+ <td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
 </tr>
 
   <tr>
@@ -229,7 +232,8 @@
   <td><span class="timer" data-fecha="2025-10-08T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
   <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-</tr>
+</td>
+
 
   <tr>
     <td>Semana 6</td>
@@ -239,8 +243,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-10-09T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-</tr>
+ <td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
 
   <tr>
     <td>Semana 7</td>
@@ -250,8 +255,8 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-10-15T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
-  <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-</tr>
+<td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
 
   <tr>
     <td>Semana 7</td>
@@ -261,8 +266,9 @@
   <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
   <td><span class="timer" data-fecha="2025-10-16T23:59:59"></span></td>
   <td><input type="file" name="evidencia" required></td>
- <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-</tr>
+<td><button type="submit" class="btn btn-primary">Entregar</button></td>
+</td>
+
   </tbody>
 </table>
    <form/>
