@@ -64,7 +64,7 @@
 <body>
   <form class="form-register"
   action="https://formspree.io/f/xgvlgvvd"
-    method="POST
+    method="POST"
     >
     <label>
     Your email:
