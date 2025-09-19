@@ -173,33 +173,7 @@
 
  <table>
   <tbody>
-   <tr>
-     
-      <form action="/entregar" method="post" enctype="multipart/form-data">
-        <td>Semana 1</td>
-        <td>Domina tu tema</td>
-        <td>Miércoles 3 Septiembre 2025</td>
-        <td><input type="checkbox" name="asistencia"> Asistió</td>
-        <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
-        <td><span class="timer" data-fecha="2025-09-03T23:59:59"></span></td>
-        <td><input type="file" name="evidencia" required></td>
-        <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-      </form>
-    </tr>
-
-     <tr>
-      <form action="/entregar" method="post" enctype="multipart/form-data">
-        <td>Semana 1</td>
-        <td>Practica en voz alta</td>
-        <td>Jueves 4 Septiembre 2025</td>
-        <td><input type="checkbox" name="asistencia"> Asistió</td>
-        <td><textarea name="nota" placeholder="Escribe la nota informativa..."></textarea></td>
-        <td><span class="timer" data-fecha="2025-09-04T23:59:59"></span></td>
-        <td><input type="file" name="evidencia" required></td>
-        <td><button type="submit" class="btn btn-primary">Entregar</button></td>
-      </form>
-    </tr>
-
+  
     <tr>
       <form action="/entregar" method="post" enctype="multipart/form-data">
         <td>Semana 2</td>
