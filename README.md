@@ -65,7 +65,7 @@
 
   <h1>¡Bienvenidas/dos al registro de club de tareas!</h1>
 
-  <form class="form registro" action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+  <form class="form registro" action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
 
     <div class="mb-3">
       <label for="email" class="form-label">Añade una cuenta Gmail y/o Email</label>
@@ -166,7 +166,7 @@
   </thead>
   <tbody>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Haz pausas intencionadas</td>
@@ -190,7 +190,7 @@
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 4</td>
     <td>Varia el tono y ritmo</td>
@@ -215,7 +215,7 @@
 </form>
 
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Utiiza notas clave</td>
@@ -240,7 +240,7 @@
 </form>
 
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 5</td>
     <td>Establece contacto visual</td>
@@ -264,7 +264,7 @@
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Sonrie</td>
@@ -287,7 +287,7 @@
     </td>
   </tr>
 </form>
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 6</td>
     <td>Se honesto contigo mismo</td>
@@ -311,7 +311,7 @@
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Capacitacion</td>
@@ -335,7 +335,7 @@
   </tr>
 </form>
 
-<form action="https://formspree.io/f/mwpnppbz" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
   <tr>
     <td>Semana 7</td>
     <td>Inicia la siguiente etapa</td>
