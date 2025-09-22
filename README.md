@@ -165,41 +165,28 @@
     </tr>
   </thead>
   <tbody>
-
 <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
  <tr>
-  <td>Semana 4</td>
-  <td>Haz pausas intencionadas</td>
-  <td>Miércoles 24 Septiembre 2025</td>
-  <td>
-    <input type="checkbox" name="asistencia"> Asistió
-  </td>
-  <td>
-    <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
-  </td>
-  <td>
-    <span class="timer" data-fecha="2025-09-24T23:59:59"></span>
-  </td>
-  <td>
-    <!-- Botón personalizado para entregar la foto -->
-    <input type="file" id="evidencia4" name="evidencia" accept="image/*" style="display: none;" required>
-    <button type="button" onclick="document.getElementById('evidencia4').click()" class="btn btn-secondary">
-    </button>
-    <span id="archivoSeleccionado4" style="display: block; font-size: 0.9em; color: gray;"></span>
-  </td>
-  <td>
-    <input type="hidden" name="actividad" value="Haz pausas intencionadas">
-    <!-- Botón de entrega eliminado -->
-  </td>
-</tr>
-
-<script>
-  // Mostrar nombre del archivo seleccionado
-  document.getElementById('evidencia4').addEventListener('change', function () {
-    const nombreArchivo = this.files[0] ? this.files[0].name : 'Ningún archivo seleccionado';
-    document.getElementById('archivoSeleccionado4').textContent = nombreArchivo;
-  });
-</script>
+    <td>Semana 4</td>
+    <td>Haz pausas intencionadas</td>
+    <td>Miércoles 24 Septiembre 2025</td>
+    <td>
+      <input type="checkbox" name="asistencia"> Asistió
+    </td>
+    <td>
+      <textarea name="nota" placeholder="Escribe la nota informativa..." style="width: 300px; height: 100px;"></textarea>
+    </td> 
+    <td>
+      <span class="timer" data-fecha="2025-09-24T23:59:59"></span>
+    </td>
+    <td>
+      <input type="file" name="evidencia" required>
+    </td>
+    <td>
+      <input type="hidden" name="actividad" value="Haz pausas intencionadas">
+      <button type="submit" class="btn btn-primary">Entregar</button>
+    </td>
+  </tr>
 
 </form>
 
