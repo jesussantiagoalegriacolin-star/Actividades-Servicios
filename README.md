@@ -175,8 +175,8 @@
       <input type="checkbox" name="asistencia"> Asistió
     </td>
     <td>
-      <textarea name="nota" placeholder="Escribe la nota informativa..." style="width: 300px; height: 100px;"></textarea>
-    </td> 
+      <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+    </td>
     <td>
       <span class="timer" data-fecha="2025-09-24T23:59:59"></span>
     </td>
@@ -464,4 +464,3 @@
 
 </body>
 </html>
-
