@@ -358,6 +358,736 @@
     </td>
   </tr>
 </form>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de Actividades</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2ff;
+            text-align: center;
+        }
+        .header-green {
+            background-color: #d9ead3; /* Color verde claro similar al de la imagen */
+        }
+        .celda-verde {
+            background-color: #d9ead3;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            min-height: 50px;
+            box-sizing: border-box;
+        }
+        /* Estilos básicos para el botón Entregar, similar a "btn btn-primary" de Bootstrap */
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2">SEMANA</th>
+            <th rowspan="2">TEMA</th>
+            <th colspan="2">OCTUBRE 2025</th>
+            <th colspan="2">NOVIEMBRE 2025</th>
+            <th rowspan="2">Asistencia</th>
+            <th rowspan="2">Nota Informativa</th>
+            <th rowspan="2">Temporizador</th>
+            <th rowspan="2">Evidencia</th>
+            <th rowspan="2">Acción</th>
+        </tr>
+        <tr>
+            <th>MIÉRCOLES</th>
+            <th>JUEVES</th>
+            <th>MIÉRCOLES</th>
+            <th>JUEVES</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Día Mundial de la Alimentación</td>
+            <td class="celda-verde">16</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-16T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Día Mundial de la Alimentación">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Semáforo de la alimentación</td>
+            <td class="celda-verde"></td> <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-16T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Semáforo de la alimentación">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="3">2</td>
+            <td>Celebración del día de Muertos</td>
+            <td class="celda-verde">22</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-22T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Celebración del día de Muertos">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Papel picado</td>
+            <td></td>
+            <td class="celda-verde">23</td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-23T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Papel picado">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>La Ofrenda</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-23T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="La Ofrenda">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="5">3</td>
+            <td>Flor de cempasúchil</td>
+            <td class="celda-verde"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-23T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Flor de cempasúchil">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Calaveras Literarias</td>
+            <td class="celda-verde">29</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-29T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Calaveras Literarias">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Versos escritos</td>
+            <td></td>
+            <td class="celda-verde"></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-29T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Versos escritos">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>José Guadalupe Posada</td>
+            <td></td>
+            <td class="celda-verde">30</td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-30T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="José Guadalupe Posada">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Sopa de letras</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-10-30T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Sopa de letras">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="4">4</td>
+            <td>Revolución Mexicana</td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">5</td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-05T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Revolución Mexicana">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Rompecabezas</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-05T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Rompecabezas">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Sor Juana Inés de la Cruz</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">6</td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-06T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Sor Juana Inés de la Cruz">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Mandala</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-06T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Mandala">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="4">5</td>
+            <td>Principales líderes de la revolución</td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">12</td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-12T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Principales líderes de la revolución">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Crucigrama</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-12T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Crucigrama">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Mujeres de la revolución</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">13</td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-13T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Mujeres de la revolución">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Cubo</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-13T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Cubo">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="4">6</td>
+            <td>Constitución de 1917</td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">19</td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-19T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Constitución de 1917">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Venustiano Carranza armable</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-19T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Venustiano Carranza armable">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Día Internacional de la palabra</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">20</td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-20T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Día Internacional de la palabra">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Leer un texto y comentarlo</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-20T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Leer un texto y comentarlo">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td rowspan="2">7</td>
+            <td>Hablemos de nuestras emociones</td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">26</td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-26T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Hablemos de nuestras emociones">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td>Termómetro de las emociones</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-26T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Termómetro de las emociones">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td></td> <td>Día internacional del jaguar</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="celda-verde">27</td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-27T23:59:59"></span>
+            </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Día internacional del jaguar">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+    <form action="https://formspree.io/f/xgvlgvvd" method="POST" enctype="multipart/form-data">
+        <tr>
+            <td></td> <td>Jaguar oscilatorio</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="checkbox" name="asistencia"> Asistió
+            </td>
+            <td>
+                <textarea name="nota" placeholder="Escribe la nota informativa..."></textarea>
+            </td>
+            <td>
+                <span class="timer" data-fecha="2025-11-27T23:59:59"></span> </td>
+            <td>
+                <input type="file" name="evidencia" required>
+            </td>
+            <td>
+                <input type="hidden" name="actividad" value="Jaguar oscilatorio">
+                <button type="submit" class="btn btn-primary">Entregar</button>
+            </td>
+        </tr>
+    </form>
+
+    </tbody>
+</table>
+
+</body>
+</html>
   </tbody>
 </table>
 
